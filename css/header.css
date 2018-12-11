@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration:none;
+}
+/* 头部背景 */
+.header>.header_bj{
+    width:100%;
+    height:150px;
+    background:url(../img/index/bj.jpg);
+}     
+.header>.header_bj>img{
+    width:24%;
+    height:100%;
+} 
+/* 头部nav */
+#nav{
+    background:url(../img/index/navbg.gif);
+    width:100%;
+    height:40px;
+}
+#nav>#navbar{
+    width:100%;
+    height:78px;
+    margin:0 auto;
+}
+#nav>#navbar>#navs>ul>li{
+    float:left;
+    padding-top:10px;
+    margin-left:7%;
+    font-weight:bold;
+}
