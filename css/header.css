@@ -14,20 +14,99 @@
     width:24%;
     height:100%;
 } 
+
+
 /* 头部nav */
-#nav{
+nav {
+    height: 40px;
     background:url(../img/index/navbg.gif);
-    width:100%;
-    height:40px;
-}
-#nav>#navbar{
-    width:100%;
-    height:78px;
-    margin:0 auto;
-}
-#nav>#navbar>#navs>ul>li{
-    float:left;
-    padding-top:10px;
-    margin-left:7%;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    height:40px
+  }
+  .main > li {
+    margin: 0 1%;
+  }
+  .main>li>a{
     font-weight:bold;
-}
+    font-size:16px;
+  }
+  a {
+    color: #ffe;
+    display: block;
+    /*padding: 10px 15px;*/
+    width:150px;
+    height:40px;
+    font-size: 16px;
+    line-height:40px;
+  }
+  a:hover {
+    color:#000;
+    background:url(../img/index/3.gif);
+    border-radius:5px;
+   
+  }
+  .main>li:hover{
+    background:url(../img/index/navOnbg.jpg);
+    background-size:150px 40px;
+  }
+  .drop{
+    width:150px;
+    height:200px;
+    background-color:#afa;
+    border-radius:5px;
+    display:none;
+    animation:n2 .5s linear;
+  }
+  .drop li a {
+    padding: 10px 0;
+    color:#000;
+  }
+  .show{
+    display:block;
+    width:150px;
+    height:200px;
+    background-color:#afa;
+    border-radius:5px;
+    animation:n1 .5s linear;
+  }
+  @keyframes n1{
+    0%{
+      height:0;
+    }
+    100%{
+      height:200px;
+    }
+  }
+  @keyframes n2{
+    0%{
+      height:200px;
+    }
+    100%{
+      height:0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
