@@ -29,13 +29,13 @@ nav {
     height:40px
   }
   .main > li {
-    margin: 0 1%;
+    margin: 0 .5%;
   }
   .main>li>a{
     font-weight:bold;
     font-size:16px;
   }
-  a {
+ nav a {
     color: #ffe;
     display: block;
     /*padding: 10px 15px;*/
@@ -44,15 +44,17 @@ nav {
     font-size: 16px;
     line-height:40px;
   }
-  a:hover {
+  nav a:hover {
     color:#000;
     background:url(../img/index/3.gif);
     border-radius:5px;
+    z-index: 100;
    
   }
   .main>li:hover{
     background:url(../img/index/navOnbg.jpg);
     background-size:150px 40px;
+    z-index: 99;
   }
   .drop{
     width:150px;
