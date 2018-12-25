@@ -2,30 +2,363 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>品牌跑车</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
     <style>
-        *{padding:0;margin:0;}
-        div{
-            width:100%;
-            height:150px;
-            background:url(img/index/bj.jpg);
-        }
-        img{
-            width:380px;
-        }
-        
-        
     </style>
 </head>
 <body>
-    <div>
-        <img src="img/index/1.gif" alt="">
-        <img src="img/index/1.gif" alt="">
-        <img src="img/index/1.gif" alt="">
-        <img src="img/index/1.gif" alt="">
+<header>
+    <!--头部背景图片-->
+    <div class="header">
+        <div class="header_bj">
+            <img src="img/index/1.gif" alt="">
+            <img src="img/index/1.gif" alt="">
+            <img src="img/index/1.gif" alt="">
+            <img src="img/index/1.gif" alt="">
+        </div>
+        <!--导航栏-->
+    <nav>
+        <ul class="main">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="" class="">红旗</a>
+                <ul id="m1" class="drop menu1">
+                    <li><a href="">红旗L5</a></li>
+                    <li><a href="">新红旗H5</a></li>
+                    <li><a href="">新红旗H7</a></li>
+                    <li><a href="">红旗HS7</a></li>
+                    <li><a href="">红旗E-HS3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">宝马</a>
+                <ul id="m2" class="drop menu2">
+                    <li><a href="">宝马5系</a></li>
+                    <li><a href="">宝马7系</a></li>
+                    <li><a href="">宝马X6</a></li>
+                    <li><a href="">宝马X7</a></li>
+                    <li><a href="">宝马i8</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">奔驰</a>
+                <ul id="m3" class="drop menu3">
+                    <li><a href="">奔驰c级</a></li>
+                    <li><a href="">奔驰G级</a></li>
+                    <li><a href="">奔驰S级</a></li>
+                    <li><a href="">奔驰AMG GT</a></li>
+                    <li><a href="">迈巴赫S级</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">奥迪</a>
+                <ul id="m4" class="drop menu4">
+                    <li><a href="">奥迪A7</a></li>
+                    <li><a href="">奥迪A8L</a></li>
+                    <li><a href="">奥迪Q7</a></li>
+                    <li><a href="">奥迪TT</a></li>
+                    <li><a href="">奥迪R8</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">保时捷</a>
+                <ul id="m5" class="drop menu5">
+                    <li><a href="">保时捷Cayenne</a></li>
+                    <li><a href="">保时捷Panamera</a></li>
+                    <li><a href="">保时捷911</a></li>
+                    <li><a href="">保时捷718</a></li>
+                    <li><a href="">保时捷Mission E</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">法拉利</a>
+                <ul id="m6" class="drop menu6">
+                    <li><a href="">法拉利458</a></li>
+                    <li><a href="">法拉利488</a></li>
+                    <li><a href="">法拉利F12</a></li>
+                    <li><a href="">法拉利Portofino</a></li>
+                    <li><a href="">法拉利LaFerrari</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">玛莎拉蒂</a>
+                <ul id="m7" class="drop menu6">
+                    <li><a href="">玛莎拉蒂Ghibli</a></li>
+                    <li><a href="">玛莎拉蒂Levante</a></li>
+                    <li><a href="">玛莎拉蒂总裁</a></li>
+                    <li><a href="">玛莎拉蒂GT</a></li>
+                    <li><a href="">玛莎拉蒂GC</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">劳斯莱斯</a>
+                <ul id="m8" class="drop menu6">
+                    <li><a href="">曜影</a></li>
+                    <li><a href="">魅影</a></li>
+                    <li><a href="">幻影</a></li>
+                    <li><a href="">古斯特</a></li>
+                    <li><a href="">库里南</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     </div>
-    
+</header>    
+  
+<!-- 手风琴 -->
+<div class="flash4">
+	<ul>
+    	<li class="first">
+        	<div class="imgTop">
+                <img src="img/index/hq.jpg" width="538" height="405"  alt="" class="tm">
+            </div>
+            <div class="imgCen">Let ideals fly</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">红旗</p>
+                    <p class="bt_2">
+                        <span>红旗L5</span>
+                        <span>红旗L7</span>
+                        <span>红旗HS7</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li>
+        	<div class="imgTop">
+                <img src="img/index/bwm.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">Art of life is your only pride</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">宝马</p>
+                    <p class="bt_2">
+                        <span>宝马7系</span>
+                        <span>宝马X7</span>
+                        <span>宝马i8</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li>
+        	<div class="imgTop">
+                <img src="img/index/bc.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">Mercedes-benz，the best or nothing</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">奔驰</p>
+                    <p class="bt_2">
+                        <span>奔驰c级</span>
+                        <span>奔驰G级</span>
+                        <span>奔驰S级</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li>
+        	<div class="imgTop">
+                <img src="img/index/ad.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">either you have it or you don't</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">奥迪</p>
+                    <p class="bt_2">
+                        <span>奥迪A8L</span>
+                        <span>奥迪Q7</span>
+                        <span>奥迪R8</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li>
+        	<div class="imgTop">
+                <img src="img/index/bsj.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">Only Porsche can win Porsche</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">保时捷</p>
+                    <p class="bt_2">
+                        <span>保时捷Panamera</span>
+                        <span>保时捷Cayenne</span>
+                        <span>保时捷911</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li>
+        	<div class="imgTop">
+                <img src="img/index/fll.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">You world,henceforth unbounded</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">法拉利</p>
+                    <p class="bt_2">
+                        <span>法拉利458</span>
+                        <span>法拉利488</span>
+                        <span>法拉利F12</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+        <li class="fast">
+        	<div class="imgTop">
+                <img src="img/index/ms.jpg" width="538" height="405"  alt="">
+            </div>
+            <div class="imgCen">"Maserati", the world is at ease</div>
+            <div class="imgBot">
+                <a href="">
+                    <p class="bt_1">玛莎拉蒂</p>
+                    <p class="bt_2">
+                        <span>玛莎拉蒂Ghibli</span>
+                        <span>玛莎拉蒂Levante</span>
+                        <span>玛莎拉蒂总裁</span>
+                    </p>
+                </a>
+            </div>
+        </li>
+    </ul>	
+</div>
+
+<!--侧边左边-->
+<div id="d1">
+    <span class="d2" id="d2">更多详情</span>
+    <div class="d3" id="d3">
+        <a href=""><span>红旗L5</span></a>
+        <a href="">红旗L7</a>
+        <a href="">宝马7系</a>
+        <a href="">宝马X7</a>
+        <a href="">宝马i8</a>
+        <a href="">奔驰G级</a>
+        <a href="">奔驰S级</a>
+        <a href="">保时捷911</a>
+        <a href="">保时捷Panamera</a>
+        <a href="">法拉利488</a>
+        <a href="">法拉利458</a>
+        <a href="">玛莎拉蒂GT</a>
+        <a href="">玛莎拉蒂GT</a>
+        <a href="">奥迪A8L</a>
+        <a href="">奥迪R8</a>
+        <a href="">幻影</a>
+        <a href="">魅影</a>
+        <a href="">曜影</a>
+    </div>
+</div>
+
+<!--侧边右边-->
+<div class="aside_right">
+    <div class="rnav">
+        <a href="https://user.qzone.qq.com/1669902328/main">
+            <img src="img/index/zixunkefu.png" alt="">
+        </a>
+       <a href="" class="focus">
+            <img src="img/index/guanzhuwomen.png" alt="">
+        </a>
+        <a href="" class="phone">
+            <img src="img/index/tel.png" alt="">
+        </a>
+    </div>
+    <div class="n1">
+        <div>
+            <img src="img/index/xiaoxin.png" alt="">
+        </div>
+    </div>
+    <div class="n2">
+        <div>
+            <img src="img/index/telphone.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+<!--中间小图-->
+<div class="main11">
+	<!-- 闪购内容-->
+		<div id="flashshopping">
+            <h1>各种车型任你选</h1>
+			<ul class="clear">
+				<li class="img1/banner01.jpg">
+					<div><img src="img1/aj5.jpg" alt=""/></div>
+					<div class="c1">
+						<a href=""><span>红旗</span></a>
+
+					</div>
+				</li>
+				<li class="img1/banner04.jpg">
+					<div><img src="img1/aj13.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>宝马</span></a>
+					</div>
+				</li>
+				<li class="img1/banner05.jpg">
+					<div><img src="img1/aj12.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>奔驰</span></a>
+					</div>
+				</li>
+				<li class="img1/banner01.jpg">
+					<div><img src="img1/aj15.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>奥迪</span></a>
+					</div>
+				</li>
+				<li class="img1/banner05.jpg">
+					<div><img src="img1/aj12.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>保时捷</span></a>
+					</div>
+				</li>
+				<li class="img1/banner05.jpg">
+					<div><img src="img1/aj21.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>法拉利</span></a>
+					</div>
+				</li>
+				<li class="img1/banner04.jpg">
+					<div><img src="img1/aj21.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>玛莎拉蒂</span></a>
+					</div>
+				</li>
+				<li class="img1/banner04.jpg">
+					<div><img src="img1/aj5.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>劳斯莱斯</span></a>
+					</div>
+				</li>
+				<li class="img1/banner04.jpg">
+					<div><img src="img1/aj15.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>幻影</span></a>
+					</div>
+				</li>
+				<li class="img1/banner02.jpg">
+					<div><img src="img1/aj21.jpg" alt=""/></div>
+					<div>
+						<a href=""><span>魅影</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+</div>
+
+
+<script src="js/header.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
