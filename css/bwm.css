@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration:none;
+}
+/* 导航栏start */
+header{
+    width:100%;
+    height:100px;
+    background:#8e8e8e;
+}
+header .nav{
+    width:100%;
+    height:100px;
+}
+header .nav ul{
+    width:1420px;
+    height:50px;
+    position: relative;
+    margin:0 auto;
+    
+}
+header .nav .n1 li{
+    display: inline-block;
+    margin:0 20px;
+    font-size:13px;
+    line-height: 50px;
+}
+header .nav ul li{
+    display: inline-block;
+    margin:0 20px;
+    font-size:18px;
+    line-height: 50px;
+}
+header .nav ul li a{
+    color:#fff;
+}
+header .nav ul li a:hover{
+    color:#0653b6;
+}
+header .nav img{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    right:350px;
+}
+/* 导航栏end */
+
+/* 主体main */
+.main{
+    width:1420px;
+    height:100%;
+    margin:0 auto;
+}
+.main .section1>div{
+    position:absolute;
+    top:160px;
+    left:300px;
+    color:#fff;
+}
+.main .section1 img{
+    width:1420px;
+    height:100%;
+}
+.main .section2{
+    border-bottom:1px solid #c4c4c4;
+}
+.main .section2>div{
+    text-align: center;
+    color:#000;
+}
+.main .section2>div>h1{
+    margin:35px 0;
+    font-size:40px;
+}
+.main .section2>div>h3{
+    margin:0 0 20px 0;
+    font-size:25px;
+}
+.main .section2 p{
+    text-align: center;
+}
+
+/* 轮播section3 start */
+.active{
+    background:#007aff;
+    opacity: 1;
+}
+.main .section3{
+    width:1420px;
+    height:400px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}
+.viewport{
+    width:12780px;
+    height:400px;
+}
+.main .section3 .viewport .slider1{
+    width:1420px;
+    height:100%;
+    float:left;
+}
+.main .section3 h1{
+    font-size:50px;
+    margin-top:30px;
+}
+.main .section3 h2{
+    font-size:35px;
+    margin-top:10px;
+}
+.main .section3 .car{
+    font-size:35px;
+    margin-top:10px;
+}
+.main .section3 .car::before{
+    content: url(../img/bmw/car.png)
+}
+.main .section3 .b30{
+    width:710px;
+    height:200px;
+    float:left;
+}
+.main .section3 .b30 p{
+    font-size:20px;
+}
+.main .section3 .b30 span:nth-child(2){
+    font-size:30px;
+    font-weight: 900;
+}
+.main .section3 .b30 .acc1::before{
+    content:url(../img/bmw/acceleration.png)
+}
+.main .section3 .b30 .fuel1::before{
+    content:url(../img/bmw/fuel.png)
+}
+/* 两个按钮 */
+.main .section3 .next,.main .section3 .prev{
+    
+    width:30px;
+    height:60px;
+}
+.main .section3 .next{
+    position:absolute;
+    right:0;
+    top:45%;
+    background:#666 url(../img/bmw/an.png);
+    background-position: 30px;
+    background-size:213px;
+}
+.main .section3 .prev{
+    position:absolute;
+    left:0;
+    top:45%;
+    background:#666 url(../img/bmw/an.png);
+    background-position: 210px;
+    background-size:213px;
+}
+
+/* 底部圆点 */
+.main .section3 .controls{
+    width:100%;
+    text-align: center;
+    position:absolute;
+    z-index: 10;
+    bottom:10px;
+}
+.main .section3 .controls .pager{
+    background:#000;
+    opacity:.3;
+    width:12px;
+    height:12px;
+    margin-right:20px;
+    display:inline-block;
+    border-radius: 50%;
+    z-index: 99;
+}
+.active{
+    opacity:1;
+    background:#007aff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 轮播section3 end */
+

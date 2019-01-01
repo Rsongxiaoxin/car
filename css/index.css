@@ -87,6 +87,7 @@ img{border:0px;}
 
 /* 侧边栏 右边*/
 .aside_right{
+    z-index: 10;
     position: fixed;
     right:1px;
     top:35%;
@@ -129,8 +130,9 @@ img{border:0px;}
 /* 左边详情 */
 #d1{
     width:200px;
-    position: absolute;
+    position:fixed;
     top:30%;
+    z-index:10;
 }
 .d2{
     width:30px;
@@ -153,7 +155,6 @@ img{border:0px;}
     display: block;
     width:230px;
     height:300px;
-    background:#252525;
     animation:l .5s linear;
     border-radius:10%;
 }
@@ -172,7 +173,6 @@ img{border:0px;}
     padding:5px;
 }
 #d3 a:hover{
-    background:#FFD700;
     background:url(../img/index/3.gif);
 }
 
@@ -233,8 +233,6 @@ img{border:0px;}
 
 
 
-
-
 /* 中间小图 */
 .main11{
     width: 1400px;
@@ -256,13 +254,13 @@ img{border:0px;}
 	background: url("img1/banner01.jpg");
 	transition: all .5s linear;
 	width:1420px;
-	height:350px;
+	height:450px;
 }
 #flashshopping ul li{
 	position: relative;
 	overflow: hidden;
 	margin-left: 40px;
-	margin-bottom: 10px;
+	margin: 30px;
 	border-radius: 10px;
 	float: left;
 	opacity: 0.6;
@@ -272,7 +270,7 @@ img{border:0px;}
 }
 #flashshopping ul li div:last-child{
 	width: 220px;
-	height: 165px;
+	height: 225px;
 	background: rgba(0,0,0,0.5);
 	border-radius: 10px;
 	position: absolute;
@@ -292,4 +290,17 @@ img{border:0px;}
 	padding: 2px;
 	background: #e4393c;
 	border-radius: 5px;
+}
+
+/* 视频部分 */
+.vio{
+    width:1420px;
+    height:197px;
+    margin:auto;
+    border:1px solid #fff;
+}
+.vio video{
+    width:350px;
+    height:197px;
+    margin-left:1px;
 }
