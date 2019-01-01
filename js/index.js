@@ -12,7 +12,6 @@ $(function() {
     })
 
 	//手风琴动画效果
-
     var _index7=0;
     $(".flash4 ul li").mouseover(function(){
         _index7=$(this).index();
@@ -26,15 +25,11 @@ $(function() {
         $("p.bt_2").css("display","none");
     });
     
-
-    
-
-
+// 侧边\
     $(".d2").mouseenter(function () {
         $(".d2").removeClass("d2").addClass("c2"),
         $(".d3").removeClass("d3").addClass("c3")
     });
-
 
     $("#d3").mouseleave(function () {
         $("#d2").removeClass("c2").addClass("d2"),
@@ -54,7 +49,6 @@ $(function() {
         }
     }
 
-
-
+   
 });
 
